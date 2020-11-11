@@ -55,4 +55,10 @@ This repository contains two files.
 
 The file `fin_simulate.jl` contains code for the function `fin_simulate` which performs the provider simulation using input data that specifies the time horizon; the provider schedule and capacity; the predicted risk score of each patient (on the day of surgery completion; one day after surgery completion; and 2 or more days after surgery completion); the cost of readmission of each patient; the day on which each patient is admitted; how many days after admission does the patient complete surgery; and how many days after admission does the patient get discharged. 
 
-The file `fin_example.jl` contains a script that uses the function `fin_simulate` with synthetic/artificially generated data to perform an example of the simulation. (Due to institutional restrictions, the real patient data used to perform the simulation in the paper is not included in this repository or in this script.) It additionally includes an example of code to compute bootstrap based confidence intervals for the main result metrics. 
+The file `fin_example.jl` contains a script that uses the function `fin_simulate` with synthetic/artificially generated data to perform an example of the simulation. (Due to institutional restrictions, the real patient data used to perform the simulation in the paper is not included in this repository or in this script.) It additionally includes an example of code to compute bootstrap based confidence intervals for the main result metrics. It can be run by typing 
+
+```
+> julia fin_example.jl
+```
+
+in a terminal window. 
